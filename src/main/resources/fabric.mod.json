@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "fakewands",
+	"version": "${version}",
+	"name": "Fake Wands",
+	"description": "Adds fake items that correspond to WorldEdit wands.",
+	"authors": [
+		"haykam821"
+	],
+	"contact": {
+		"homepage": "https://github.com/haykam821/Fake-Wands#readme",
+		"issues": "https://github.com/haykam821/Fake-Wands/issues"
+	},
+	"entrypoints": {
+		"main": [
+			"io.github.haykam821.fakewands.Main"
+		]
+	},
+	"mixins": [
+		"fakewands.mixin.json"
+	],
+	"license": "MIT",
+	"icon": "assets/fakewands/icon.png",
+	"depends": {
+		"fabricloader": ">=0.4.0",
+		"plasmid": "*",
+		"worldedit": "*"
+	}
+}
