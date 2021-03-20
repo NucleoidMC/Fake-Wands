@@ -38,7 +38,9 @@ dependencies {
 	modImplementation("xyz.nucleoid:plasmid:${project.plasmid_version}")
 
 	// WorldEdit (Core)
-	modImplementation("com.sk89q.worldedit:worldedit-core:${worldedit_version}")
+	modImplementation("com.sk89q.worldedit:worldedit-core:${worldedit_version}") {
+		transitive = false
+	}
 }
 
 processResources {
