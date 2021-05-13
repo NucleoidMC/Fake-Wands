@@ -2,10 +2,10 @@ package io.github.haykam821.fakewands.item;
 
 import com.sk89q.worldedit.command.tool.Tool;
 
+import eu.pb4.polymer.item.VirtualItem;
 import net.minecraft.item.Item;
-import xyz.nucleoid.plasmid.fake.FakeItem;
 
-public class WandItem extends Item implements FakeItem {
+public class WandItem extends Item implements VirtualItem {
 	private final Item proxy;
 	private final Tool tool;
 
@@ -25,7 +25,7 @@ public class WandItem extends Item implements FakeItem {
 	}
 
 	@Override
-	public Item asProxy() {
+	public Item getVirtualItem() {
 		return this.proxy;
 	}
 }
